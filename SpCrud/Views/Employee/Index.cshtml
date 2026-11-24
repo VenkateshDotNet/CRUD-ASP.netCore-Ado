@@ -1,0 +1,15 @@
+﻿@model SpCrud.Models.Employee;
+@using(Html.BeginForm("Index","Employee",HttpMethod.Post))
+{
+    @Html.Label("Enter Eno")
+    @Html.TextBoxFor(Model=>Model.Eno)
+    <br />
+    @Html.Label("Enter Ename")
+    @Html.TextBoxFor(Model => Model.Ename)
+    <br />
+    @Html.Label("Enter Salary")
+    @Html.TextBoxFor(Model => Model.Salary)
+    <br />
+    <input type="submit" value="Save" />
+
+}
